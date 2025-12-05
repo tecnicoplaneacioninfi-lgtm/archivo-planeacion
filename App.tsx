@@ -8,17 +8,21 @@ import { NormatividadView } from './views/Normatividad';
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState('alistamiento');
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  // En desktop (>=768px) inicia abierto, en mobile cerrado
+  const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth >= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   // Detectar tamaño de pantalla
   useEffect(() => {
     const checkMobile = () => {
       const mobile = window.innerWidth < 768;
       setIsMobile(mobile);
-      // En desktop, sidebar abierto por defecto; en mobile, cerrado
-      if (!mobile && !isSidebarOpen) {
+      // En desktop, abrir sidebar automáticamente
+      if (!mobile) {
         setIsSidebarOpen(true);
+      } else {
+        // En mobile, cerrar para no obstruir
+        setIsSidebarOpen(false);
       }
     };
 
