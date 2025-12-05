@@ -1,8 +1,14 @@
-/* Base Styles */
+/* Base Styles - Mobile First */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  /* Prevenir zoom en mobile en inputs */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
@@ -10,6 +16,18 @@ body {
   background-color: #f3f4f6;
   color: #1f2937;
   line-height: 1.5;
+  /* Prevenir scroll horizontal */
+  overflow-x: hidden;
+  /* Mejor rendering de fuentes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevenir desbordamientos */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Animations */
@@ -28,10 +46,17 @@ body {
   animation: fadeIn 0.3s ease-out;
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar - Responsive */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
+}
+
+@media (min-width: 768px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
@@ -53,11 +78,113 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-/* Focus Styles */
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
+/* Focus Styles - Accesibles */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 2px solid #0f3d6e;
   outline-offset: 2px;
+}
+
+/* Prevenir tap highlight en mobile */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Tablas responsive */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Inputs y formularios responsive */
+input, select, textarea {
+  font-size: 16px; /* Prevenir zoom en iOS */
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  input, select, textarea {
+    font-size: 14px;
+  }
+}
+
+/* Contenedores con máximo ancho */
+.container-responsive {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-responsive {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Textos truncados */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Grid responsive helper */
+.grid-responsive {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-responsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Ocultar scrollbar pero mantener funcionalidad */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mejor rendering de sombras */
+.shadow-smooth {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+/* Touch-friendly buttons */
+@media (max-width: 767px) {
+  button, a {
+    min-height: 44px; /* Mínimo recomendado para touch */
+    min-width: 44px;
+  }
 }
