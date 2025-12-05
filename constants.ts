@@ -14,16 +14,16 @@ export const STAFF_LIST = [
 // TRD Data estructurada según requerimiento
 export const TRD_DATA: TRDCodigo[] = [
   {
-    id: "102",
-    nombre: "102 - OFICINA ASESORA DE PLANEACIÓN",
+    id: "103",
+    nombre: "103 - OFICINA ASESORA DE PLANEACIÓN",
     series: [
       {
-        id: "102.2",
-        nombre: "102.2 - ACTAS",
+        id: "103.2",
+        nombre: "103.2 - ACTAS",
         subseries: [
-          { id: "102.2.10", nombre: "102.2.10 - Actas Comité Gestión Ambiental" },
-          { id: "102.2.11", nombre: "102.2.11 - Actas de Comité de Investigació, Innovación y Gestión del Conocimiento" },
-          { id: "102.2.15", nombre: "102.2.15 - Actas Comité Institucional de Gestión y Desempeño" },
+          { id: "103.2.10", nombre: "103.2.10 - Actas Comité Gestión Ambiental" },
+          { id: "103.2.11", nombre: "103.2.11 - Actas de Comité de Investigació, Innovación y Gestión del Conocimiento" },
+          { id: "103.2.15", nombre: "103.2.15 - Actas Comité Institucional de Gestión y Desempeño" },
         ]
       },
       {
