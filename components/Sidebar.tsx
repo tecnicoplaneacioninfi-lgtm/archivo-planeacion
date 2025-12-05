@@ -24,7 +24,11 @@ export const Sidebar: React.FC<Props> = ({ activeTab, setActiveTab, isOpen }) =>
 			`}
 		>
 			<div className="h-20 flex items-center px-4 gap-3">
-				<div className="h-10 w-10 rounded-full bg-corporate-blue text-white flex items-center justify-center font-bold">AP</div>
+				<img
+					src="/logo.png"
+					alt="Logo Planeación"
+					className="h-12 w-12 object-contain"
+				/>
 				{isOpen && <div>
 					<h2 className="text-sm font-bold">Archivo Planeación</h2>
 					<p className="text-xs text-gray-500">Menú</p>

@@ -48,6 +48,11 @@ const App: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
+            <img
+              src="/logo.png"
+              alt="Logo"
+              className="h-12 w-12 object-contain"
+            />
             <div>
               <h1 className="text-xl font-bold text-corporate-blue">Sistema de Gestión Documental</h1>
               <p className="text-xs text-corporate-green font-semibold tracking-wide">OFICINA DE PLANEACIÓN</p>
