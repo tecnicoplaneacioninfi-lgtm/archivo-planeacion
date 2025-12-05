@@ -22,93 +22,86 @@ export const TRD_DATA: TRDCodigo[] = [
         nombre: "102.2 - ACTAS",
         subseries: [
           { id: "102.2.10", nombre: "102.2.10 - Actas Comité Gestión Ambiental" },
-          { id: "102.2.11", nombre: "102.2.11 - Comité de Investigación" },
-          { id: "102.2.15", nombre: "102.2.15 - Innovación y Gestión del Conocimiento" },
-          { id: "102.2.xx", nombre: "102.2.xx - Comité Institucional Gestión y Desempeño" }
+          { id: "102.2.11", nombre: "102.2.11 - Actas de Comité de Investigació, Innovación y Gestión del Conocimiento" },
+          { id: "102.2.15", nombre: "102.2.15 - Actas Comité Institucional de Gestión y Desempeño" },
         ]
       },
       {
-        id: "102.8",
-        nombre: "102.8 - CIRCULARES",
+        id: "103.8",
+        nombre: "103.8 - CIRCULARES",
         subseries: [
-          { id: "102.8.1", nombre: "102.8.1 - Circulares Informativas" }
+          { id: "103.8.1", nombre: "103.8.1 - Circulares Informativas" }
         ]
       },
       {
-        id: "102.11",
-        nombre: "102.11 - CONCEPTOS",
+        id: "103.11",
+        nombre: "103.11 - CONCEPTOS",
         subseries: [
-          { id: "102.11.1", nombre: "102.11.1 - Conceptos de Viabilidad" }
+          { id: "103.11.1", nombre: "103.11.1 - Conceptos Viabilidad Financiera y Económica de los Proyectos" }
         ]
       },
       {
-        id: "102.18",
-        nombre: "102.18 - DERECHOS DE PETICIÓN",
+        id: "103.18",
+        nombre: "103.18 - DERECHOS DE PETICIÓN",
+      },
+      {
+        id: "103.29",
+        nombre: "103.29 - INDICADORES",
         subseries: [
-          { id: "102.18.0", nombre: "102.18 - Derechos de Petición (General)" }
+          { id: "103.29.1", nombre: "103.29.1 - Indicadores Gestión por Procesos" }
         ]
       },
       {
-        id: "102.29",
-        nombre: "102.29 - INDICADORES",
+        id: "103.30",
+        nombre: "103.30 - INFORMES",
         subseries: [
-          { id: "102.29.1", nombre: "102.29.1 - Indicadores Gestión por Procesos" }
+          { id: "103.30.3", nombre: "103.30.3 - Informes Organismos de Control y vigilancia" },
+          { id: "103.30.4", nombre: "103.30.4 - Informes a Otros organismos del estado" },
+          { id: "103.30.6", nombre: "103.30.6 - Informes anuales de seguimiento al modelo integrado de planeacion y control.MIPG" },
+          { id: "103.30.13", nombre: "103.30.13 - Informes de Auditorías Internas SIG" },
+          { id: "103.30.17", nombre: "103.30.17 - Informes de Comité Institucional de Gestión y Desempeño" },
+          { id: "103.30.25", nombre: "103.30.25 - Informes de Indicadores de Gestión" },
+          { id: "103.30.26", nombre: "103.30.26 - Informes de Seguimiento de Riesgos" },
+          { id: "103.30.34", nombre: "103.30.34 - Informes de SIG" },
+          { id: "103.30.37", nombre: "103.30.37 - Informes Internos de gestión y resultados" },
+          { id: "103.30.40", nombre: "103.30.40 - Informes de Rendición de Cuentas a la ciudadania" }
         ]
       },
       {
-        id: "102.30",
-        nombre: "102.30 - INFORMES",
+        id: "103.37",
+        nombre: "103.37 - MANUALES",
         subseries: [
-          { id: "102.30.3", nombre: "102.30.3 - Informes Organismos de Control" },
-          { id: "102.30.4", nombre: "102.30.4 - Otros organismos" },
-          { id: "102.30.6", nombre: "102.30.6 - Seguimiento MIPG" },
-          { id: "102.30.13", nombre: "102.30.13 - Auditorías Internas SIG" },
-          { id: "102.30.17", nombre: "102.30.17 - Comité Institucional" },
-          { id: "102.30.25", nombre: "102.30.25 - Indicadores Gestión" },
-          { id: "102.30.26", nombre: "102.30.26 - Seguimiento Riesgos" },
-          { id: "102.30.34", nombre: "102.30.34 - SIG" },
-          { id: "102.30.37", nombre: "102.30.37 - Informes Internos" },
-          { id: "102.30.40", nombre: "102.30.40 - Rendición de Cuentas" }
+          { id: "103.37.4", nombre: "103.37.4 - Manual Gestión Ambiental" },
+          { id: "103.37.17", nombre: "103.37.17 - Manual del SIG" }
         ]
       },
       {
-        id: "102.37",
-        nombre: "102.37 - MANUALES",
+        id: "103.38",
+        nombre: "103.38 - MAPAS DE RIESGOS",
+      },
+      {
+        id: "103.41",
+        nombre: "103.41 - PLANES",
         subseries: [
-          { id: "102.37.4", nombre: "102.37.4 - Manual Gestión Ambiental" },
-          { id: "102.37.17", nombre: "102.37.17 - Manual SIG" }
+          { id: "103.41.7", nombre: "103.41.7 - Plan de Acción Institucional" },
+          { id: "103.41.17", nombre: "103.41.17 - Plan de Mejoramiento Institucional " },
+          { id: "103.41.27", nombre: "103.41.27 - Plan Estratégicos Institucionales" },
+          { id: "103.41.29", nombre: "103.41.29 - Plan Operativos anuales" }
         ]
       },
       {
-        id: "102.38",
-        nombre: "102.38 - MAPAS DE RIESGOS",
+        id: "103.49",
+        nombre: "103.49 - PROGRAMAS",
         subseries: [
-          { id: "102.38.0", nombre: "102.38 - Mapas de Riesgos (General)" }
+          { id: "103.49.8", nombre: "103.49.8 - Programa SIG MIPG" },
+          { id: "103.49.9", nombre: "103.49.9 - Programa SIG INTEGRA" }
         ]
       },
       {
-        id: "102.41",
-        nombre: "102.41 - PLANES",
+        id: "103.52",
+        nombre: "103.52 - REGLAMENTOS",
         subseries: [
-          { id: "102.41.7", nombre: "102.41.7 - Acción" },
-          { id: "102.41.17", nombre: "102.41.17 - Mejoramiento" },
-          { id: "102.41.27", nombre: "102.41.27 - Estratégicos" },
-          { id: "102.41.29", nombre: "102.41.29 - Operativos" }
-        ]
-      },
-      {
-        id: "102.49",
-        nombre: "102.49 - PROGRAMAS",
-        subseries: [
-          { id: "102.49.8", nombre: "102.49.8 - SIG MIPG" },
-          { id: "102.49.9", nombre: "102.49.9 - SIG INTEGRA" }
-        ]
-      },
-      {
-        id: "102.52",
-        nombre: "102.52 - REGLAMENTOS",
-        subseries: [
-          { id: "102.52.1", nombre: "102.52.1 - Rendición de cuentas" }
+          { id: "103.52.1", nombre: "103.52.1 - Reglamentos Internos para la Realización de la Rendición de Cuentas" }
         ]
       }
     ]
