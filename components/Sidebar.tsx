@@ -19,10 +19,13 @@ export const Sidebar: React.FC<Props> = ({ activeTab, setActiveTab, isOpen, isMo
 	return (
 		<aside
 			className={`
-				${isMobile ? 'fixed' : 'fixed md:relative'} left-0 top-0 h-full bg-white border-r border-gray-200 
-				${isMobile ? 'z-40' : 'z-20'}
+				${isMobile ? 'fixed' : 'relative'} 
+				left-0 top-0 h-full bg-white border-r border-gray-200  
+				${isMobile ? 'z-40' : 'z-10'}
 				transition-all duration-300 ease-in-out overflow-hidden shadow-lg md:shadow-none
-				${isOpen ? 'w-64 translate-x-0' : isMobile ? 'w-64 -translate-x-full' : 'w-20'}
+
+				/* CAMBIO IMPORTANTE: Ya no es fixed en desktop */
+				${isOpen ? 'w-64' : 'w-20 md:w-20'}
 			`}
 		>
 			{/* Header del Sidebar */}
@@ -57,13 +60,14 @@ export const Sidebar: React.FC<Props> = ({ activeTab, setActiveTab, isOpen, isMo
 							title={!isOpen && !isMobile ? it.label : ''}
 						>
 							<span className="text-lg md:text-xl flex-shrink-0">{it.icon}</span>
+
 							{(isOpen || isMobile) && (
 								<span className="font-medium text-xs md:text-sm truncate flex-1">
 									{it.label}
 								</span>
 							)}
 
-							{/* Tooltip para sidebar colapsado en desktop */}
+							{/* Tooltip */}
 							{!isOpen && !isMobile && (
 								<div className="absolute left-full ml-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity whitespace-nowrap z-50">
 									{it.label}
@@ -74,7 +78,7 @@ export const Sidebar: React.FC<Props> = ({ activeTab, setActiveTab, isOpen, isMo
 				})}
 			</nav>
 
-			{/* Footer opcional para versión móvil */}
+			{/* Footer móvil */}
 			{isMobile && isOpen && (
 				<div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-100 bg-gray-50">
 					<p className="text-xs text-gray-500 text-center">

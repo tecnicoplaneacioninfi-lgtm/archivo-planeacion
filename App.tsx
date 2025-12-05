@@ -71,8 +71,7 @@ const App: React.FC = () => {
       {/* Main Content Area */}
       <main
         className={`
-          flex-1 flex flex-col h-full transition-all duration-300 ease-in-out
-          ${isMobile ? 'ml-0' : isSidebarOpen ? 'ml-64' : 'ml-20'}
+          flex-1 flex flex-col h-full transition-all duration-300 ease-in-out min-w-0
         `}
       >
         {/* Top Header */}
