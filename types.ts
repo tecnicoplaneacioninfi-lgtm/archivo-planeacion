@@ -33,12 +33,12 @@ export interface PrestamoData {
 
 export interface InventarioData {
   id?: string;
-  nombreArchivo: string;
+  nombre_archivo: string;
   ubicacion: string;
   caja: string;
   carpeta: string;
   descripcion: string;
-  fechaIngreso: string;
+  fecha_ingreso: string;
 }
 
 // TRD Structure

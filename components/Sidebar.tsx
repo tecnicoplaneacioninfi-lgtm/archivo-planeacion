@@ -12,6 +12,7 @@ export const Sidebar: React.FC<Props> = ({ activeTab, setActiveTab, isOpen }) =>
 		{ key: 'documentos', label: 'Documentos', icon: '📄' },
 		{ key: 'seguimiento', label: 'Seguimiento', icon: '🔎' },
 		{ key: 'inventario', label: 'Inventario', icon: '📦' },
+		{ key: 'normatividad', label: 'Normatividad', icon: '📜' },
 	];
 
 	return (
